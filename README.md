@@ -67,3 +67,13 @@ This function generates a random destination for the third passenger and adds 10
 ## Note
 
 This README does not include information on how to set up and run the game. You will need to include the necessary libraries and setup instructions for your specific environment.
+
+
+DrawRectangle( (obsticle3y*10)+10   ,760- (obsticle3x*10) ,  25 , 22, colors[BROWN] );
+}
+
+The provided code consists of several functions that create a pattern of blocks on a grid, each block represented by the number 2 in a 2D integer array called `indexarray`. There are various shapes and structures, such as buildings, trees, and obstacles, which are drawn on the grid. The code uses nested for-loops to fill specific regions of the `indexarray` with the number 2, essentially painting the structures onto the grid.
+
+The `tree` function generates two random tree positions and places them on the grid with a diamond-shaped crown. If the randomly generated position conflicts with a block, it will generate new positions until a valid position is found.
+
+The `obsticles`, `obsticles1`, `obsticles2`, and `obsticles3` functions each create an obstacle of size 3x3 on the grid at a random position. The DrawRectangle function call in each of these functions is responsible for drawing the obstacle on the screen using the corresponding coordinates, width, height, and color.
